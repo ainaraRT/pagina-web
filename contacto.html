@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto ACME</title>
+        <link rel="icon" href="imagenes/contacto.svg">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="estilo.css">
+
+        <script src="https://kit.fontawesome.com/1bcd53126d.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+
+        <header>
+
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+                <div class="navbar-brand nav-content">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                        <a class="navbar-brand" href="#">MENÚ</a>
+                    </button>
+                    <div class="collapse navbar-collapse navText" id="collapsibleNavbar">
+                        <ul class="navbar-nav w-100 justify-content-center">
+                            <li class="nav-item mx-5">
+                                <a class="nav-link" href="index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item mx-5">
+                                <a class="nav-link" href="#">CONTACTO</a>
+                            </li>
+                            <li class="nav-item mx-5">
+                                <a class="nav-link" href="index.html">PRODUCTOS</a>
+                            </li> 
+                            <li class="nav-item mx-5">
+                                <a class="nav-link" href="index.html">TIENDAS</a>
+                            </li> 
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+
+            <dir class="jumbotron"></dir>
+
+        </header>
+
+        <section class="social row">
+            <div>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></i>
+            </div>
+
+            <div>
+                <a href="https://www.google.com/search?q=Carnicerías+ACME&sxsrf=ALeKk01y4sXEKPV6m6aXdcJj5PcKYOCqZA%3A1621870335544&ei=_8arYNLgIICEhbIP7_ue0AY&oq=Carnicerías+ACME&gs_lcp=Cgdnd3Mtd2l6EAw6BwgjELADECdQlegBWJXoAWDz9wFoAXAAeACAAWWIAb0BkgEDMS4xmAEAoAEBqgEHZ3dzLXdpesgBAcABAQ&sclient=gws-wiz&ved=0ahUKEwiS3OLp0eLwAhUAQkEAHe-9B2oQ4dUDCA0" target="_blank"><i class="fab fa-google-plus"></i></a>
+            </div>
+
+            <div>
+                <a href="https://www.google.es/maps/search/Calle+Bomba+16,+50010+Saratoga./@41.6516998,-0.9063487,16z/data=!3m1!4b1" target="_blank"><i class="fas fa-map-marker-alt"></i></a></i>
+            </div>
+        </section>
+    
+        <section id="contacto" class="contact">
+            <form method="POST" action="http://www.cursos-diseno.es/mi-mail.php">
+                <div class="row">
+                    <div class="form-group col-12 col-sm-12 col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" placeholder="Introduzca su email" name="email" required>
+                    </div>
+                    <div class="form-group col-12 col-sm-12 col-md-6">
+                        <label for="tlf">Teléfono</label>
+                        <input type="text" class="form-control" placeholder="Introduzca su número de teléfono (opcional)" name="telefono">
+                    </div>
+                </div>
+                    <div class="form-group">
+                        <label for="ask">Mensaje</label>
+                        <textarea class="form-control" name="consulta" rows="6"></textarea>
+                        <div class="d-flex"><button type="submit" class="btn ml-auto btn-dark">Enviar</button></div>
+                    </div>
+                <input type="hidden" name="destinatario" value="ainaretework@gmail.com">
+            </form>
+        </section>
+
+        <footer>
+            <img src="imagenes/inferior.jpg">
+            <div class="row foot justify-content-center">
+                <p id="phone">Calle Bomba 16. 50010 Saratoga. Tlfno: 666 999 666.</p>
+                <p id="tablet">Calle Bomba 16. 50010 Saratoga. Tlfno: 666 999 666.<br>Fax: 999 666 999. Email: email (at) hola.com</p>
+                <p id="pc">Calle Bomba 16. 50010 Saratoga. Tlfno: 666 999 666. Fax: 999 666 999. Email: email (at) hola.com</p>
+            </div>
+        </footer>
+
+    </body>
+</html>

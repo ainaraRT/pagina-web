@@ -1,0 +1,248 @@
+/*------------AJUSTES DOCUMENTO-------------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+ 
+/*------------NAVBAR-------------------------------*/
+
+.navbar {height: 40px}
+
+.navbar-brand{
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.nav-content {
+    margin-left: 0;
+    margin-top: 28px;
+}
+
+.navbar-toggler {
+    position: fixed;
+    top: 0;
+    left: -5px;
+    border: 0
+}
+
+.bg-dark {
+    background-color: rgba(0, 0, 0, 0.85) !important;
+}
+
+/*-------AJUSTES GENERALES---------------------------*/
+
+.jumbotron {
+    margin: 0;
+    width: 100%;
+    height: 120px;
+    background: url('imagenes/superior.jpg') no-repeat center top;
+    background-size: cover;
+}
+
+.container {
+    background-color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.images {
+    margin-top: 30px !important;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+section img:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.85);
+}
+
+/*-------------ICONOS REDES SOCIALES---------------------*/
+
+.social {
+    background-color: white;
+    width: 60px;
+    margin: 20px auto;
+}
+
+.social div {
+    margin: auto;
+}
+
+i {
+    color: black;
+    margin: 10px auto;
+    font-size: 3rem;
+}
+
+i:hover {
+    color: rgb(1, 13, 124);
+}
+
+/*----------FORMULARIO------------------------------------*/
+
+.contact {
+    background-color: grey;
+    padding: 60px;
+    z-index: 2;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    text-align: left !important;
+    font-weight: bold;
+    color: black;
+}
+
+.contact button {
+    margin-top: 5px;
+}
+
+.btn-dark {
+    background-color: black;
+    border: 2px white solid;
+}
+
+/*-------BARRA FINAL DE CONTACTO Y FOOTER-----------------*/
+
+footer {
+    width: 100%;
+    z-index: -2;
+}
+
+footer img {
+    height: 170px;
+    object-fit: cover;
+}
+
+.foot {
+    object-position: bottom;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+    padding: 0px;
+    background: black;
+}
+
+#tablet, #pc {
+    display: none;
+}
+
+/*-------ADAPTACIÓN SMALL-----------------*/
+
+@media screen and (min-width: 577px) {
+    .contact {
+        width: 540px;
+        margin: auto;
+        background-color: grey;
+        padding: 60px;
+    }   
+}
+
+/*-------ADAPTACIÓN MEDIUM-----------------*/
+
+@media screen and (min-width: 768px) {
+    
+    .navbar-brand{
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+    
+    .nav-content {
+        margin: 0 auto;
+    }
+    
+    .jumbotron {
+        height: 160px;
+    }
+    
+    .container {
+        margin-top: -60px;
+        margin-bottom: -60px;
+    }
+    
+    .social {
+        width: 720px;
+        padding: 54px;
+        margin: 0 auto;
+        margin-top: -60px;
+    }
+    
+    i {
+        object-position: center;
+        margin: 10px auto;
+        font-size: 4rem;
+    }
+    
+    .contact {
+        width: 720px;
+        margin-bottom: -60px;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+        
+    .foot {
+        font-size: 0.9rem;
+        color: white;
+        margin: 0
+    }
+    
+    #phone {
+        display: none;
+    }
+
+    #tablet {
+        display: block;
+    }
+}
+
+/*-------ADAPTACIÓN LARGE-----------------*/
+@media screen and (min-width: 992px) {
+    
+    .social {
+        width: 960px;
+        padding: 54.5px;
+    }
+    
+    .contact {
+        width: 960px;
+    }
+    
+    .txt{
+        width: 800px !important;
+        margin: 0 auto
+    }
+    
+    footer {
+        position: absolute ;
+        bottom: 0;
+    }
+    
+    #tablet {
+        display: none;
+    }
+    #pc {
+        display: block;
+    }
+}
+
+/*-------ADAPTACIÓN EXTRA-LARGE-----------------*/
+
+@media screen and (min-width: 1200px) {
+    .social, .contact {
+        width: 1140px;
+    }  
+}
